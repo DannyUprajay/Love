@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women</title>
+    <link rel="stylesheet" href="women.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- <header id="site-header">
+        <a href="#" class="logo">Lové</a>
+
+        <ul>
+            <li>
+                <a href="#" class="active">Home</a>
+            </li>
+            <li><a href="#" onmouseover="menlist('block')" onmouseout="menlist('none')">Men</a>
+                 onmouseover="chbg('block')" onmouseout="chbg('none')" 
+                <div class="sous-menu">
+                    <ul id="a" class="liens" onmouseover="menlist('block')" onmouseout="menlist('none')">
+                        <li class="lien ">
+                            <a href="">All</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Best sellers</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Top</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Bottom</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Accessory</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" onmouseover="womenlist('block')" onmouseout="womenlist('none')">Women</a>
+                <div class="sous-menu2">
+                    <ul id="b" class="liens2" onmouseover="womenlist('block')" onmouseout="womenlist('none')">
+                        <li class="lien2 ">
+                            <a href="">All</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Best sellers</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Top</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Bottom</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Accessory</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" onmouseover="kidlist('block')" onmouseout="kidlist('none')">Kids</a>
+                <div class="sous-menu3">
+                    <ul id="c" class="liens3" onmouseover="kidlist('block')" onmouseout="kidlist('none')">
+                        <li class="lien3 ">
+                            <a href="">All</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Best sellers</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Top</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Bottom</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Accessory</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <div class="wrapper-search">
+            <div id="search-container">
+                <input type="search" id="search-input" placeholder="Search..."> <i
+                    class="fa-solid fa-magnifying-glass rech"></i>
+            </div>
+        </div>
+        <i class="fa-solid fa-user icon"> account</i>
+        <i class="fa-solid fa-bag-shopping icon"> bag</i>
+
+        <script>
+            function menlist(none) {
+                document.getElementById('a').style.display = none;
+            }
+            function womenlist(none) {
+                document.getElementById('b').style.display = none;
+            }
+            function kidlist(none) {
+                document.getElementById('c').style.display = none;
+            }
+
+            (function () {
+
+                var doc = document.documentElement;
+                var w = window;
+
+                var prevScroll = w.scrollY || doc.scrollTop;
+                var curScroll;
+                var direction = 0;
+                var prevDirection = 0;
+
+                var header = document.getElementById('site-header');
+
+                var checkScroll = function () {
+
+
+
+                    curScroll = w.scrollY || doc.scrollTop;
+                    if (curScroll > prevScroll) {
+                        //scrolled up
+                        direction = 2;
+                    }
+                    else if (curScroll < prevScroll) {
+                        //scrolled down
+                        direction = 1;
+                    }
+
+                    if (direction !== prevDirection) {
+                        toggleHeader(direction, curScroll);
+                    }
+
+                    prevScroll = curScroll;
+                };
+
+                var toggleHeader = function (direction, curScroll) {
+                    if (direction === 2 && curScroll > 52) {
+
+                        //replace 52 with the height of your header in px
+
+                        header.classList.add('hide');
+                        prevDirection = direction;
+                    }
+                    else if (direction === 1) {
+                        header.classList.remove('hide');
+                        prevDirection = direction;
+                    }
+                };
+
+                window.addEventListener('scroll', checkScroll);
+
+            })();
+        </script>
+
+    </header> -->
+
+    <header>
+        <a href="" class="logo">Lové</a>
+        <ul>
+            <li><a href="home.html#ho">Home</a></li>
+            <li><a href="Men.html#men-all">Men</a></li>
+            <li><a href="kids.html#kids-all">Kids</a></li>
+            <li><a href="#">Accessory</a></li>
+        </ul>
+        <ol>
+            <li><a href="">Account</a></li>
+            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+            <li><a href="shop.html#panier"><i class="fa-solid fa-bag-shopping icon"></i></a> </li>
+        </ol>
+
+    </header>
+    <section>
+        <div> <a href="women-all"></a></div>
+        <div class="cat-women">
+            <h1>Women</h1> <img src="https://i.pinimg.com/564x/0d/c2/be/0dc2be8a8178c2fb5c343ddc62948885.jpg" alt="">
+        </div>
+    </section>
+    <section class="sape">
+        <h2 class="drip">All</strong></h2>
+        <div class="parent">
+            <div class="photo">
+                <div> <img class="try" src="https://i.pinimg.com/564x/22/e2/91/22e2918ade673ec3611dd525f4f3dacf.jpg"
+                        alt="">
+                    <h2>Veste élégante simple à boutonnage en laine</h2>
+                    <p>129€</p>
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/8f/4a/57/8f4a57117a9763aaad888b89180a6ae5.jpg" alt="">
+                    <h2>Cordigan en coton et lamé</h2>
+                    <p>49€</p>
+                </div>
+                <div> <img src=" https://i.pinimg.com/564x/b6/28/db/b628db3bedcfd28b9cabd5c3cd883fa3.jpg" alt="">
+                    <h2>Jean homme ample </h2>
+                    <p>39€</p>
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/b3/97/47/b39747c25600560c16f1e87181617f01.jpg" alt="">
+                    <h2>T-shirt ample</h2>
+                    <p>29€</p>
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/0d/5d/9c/0d5d9cb9fc9c687f59b61f18cfa23db5.jpg" alt="">
+                    <h2>Pantalon droit belge</h2>
+                    <p>49€</p>
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/a8/51/d0/a851d0517379baf233a60fe81d866863.jpg" alt="">
+                    <h2>Veste en denim</h2>
+                    <p>69€</p>
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/07/32/10/0732106e1e3401976531efe23c3d9e11.jpg" alt="">
+                    <h2>Veste effet cuir</h2>
+                    <p>79€</p>
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/d3/c3/a4/d3c3a4bcce92c8c8885e648c9db34ebd.jpg" alt="">
+                    <h2>Veste trop belle</h2>
+                    <p>62€</p>
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/49/09/ba/4909baefbbb1f95011bc34cdb91add85.jpg" alt="">
+                    <h2>Sac christian dior</h2>
+                    <p>329€</p>
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/a8/87/f4/a887f4100208ef9af486c85d5a0a1ccc.jpg" alt="">
+                    <h2>Collier en or </h2>
+                    <p>29€</p>
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/73/bb/72/73bb72076767ca5c124bbc2483523248.jpg" alt="">
+                    <h2>Bracelet</h2>
+                    <p>49€</p>
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/0d/c2/be/0dc2be8a8178c2fb5c343ddc62948885.jpg" alt="">
+                    <h2>Petit sac christian dior</h2>
+                    <p>429€</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">Lové</h1>
+
+            <h2>CONTACT</h2>
+
+            <address>
+                5534 Somewhere In. The World 22193-10212<br>
+
+                <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">SERVICES EXCLUSIFS</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Services en ligne exclusifs</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Livraison le samedi </a>
+                    </li>
+
+                    <li>
+                        <a href="#">Lové</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">BESOIN D'AIDE ?</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                    <li>
+                        <a href="#">Foire aux Questions</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Options de paiement</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Expédition</a>
+                    </li>
+
+                    <li>
+                        <a href="#"> <i class="fa-brands fa-twitter"></i> &nbsp; Twitter</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i> &nbsp; &nbsp; Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i> &nbsp; Instagram</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">LEGAL</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2022 Something. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- <style>
+        .showhim {
+            position: absolute;
+            margin-left: 50%;
+            background: red;
+        }
+
+        .showme {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .showme {
+            display: none;
+        }
+
+        .showhim:hover .showme {
+            display: block;
+        }
+    </style>
+
+    <div class="showhim">HOVER ME
+        <div class="showme">hai</div>
+    </div> -->
+</body>
+
+</html>

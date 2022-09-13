@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men</title>
+    <link rel="stylesheet" href="Men.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- <header id="site-header">
+        <a href="#" class="logo">Lové</a>
+
+        <ul>
+            <li>
+                <a href="#" class="active">Home</a>
+            </li>
+            <li><a href="#" onmouseover="menlist('block')" onmouseout="menlist('none')">Men</a>
+                 onmouseover="chbg('block')" onmouseout="chbg('none')" 
+                <div class="sous-menu">
+                    <ul id="a" class="liens" onmouseover="menlist('block')" onmouseout="menlist('none')">
+                        <li class="lien ">
+                            <a href="">All</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Best sellers</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Top</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Bottom</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Accessory</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" onmouseover="womenlist('block')" onmouseout="womenlist('none')">Women</a>
+                <div class="sous-menu2">
+                    <ul id="b" class="liens2" onmouseover="womenlist('block')" onmouseout="womenlist('none')">
+                        <li class="lien2 ">
+                            <a href="">All</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Best sellers</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Top</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Bottom</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Accessory</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" onmouseover="kidlist('block')" onmouseout="kidlist('none')">Kids</a>
+                <div class="sous-menu3">
+                    <ul id="c" class="liens3" onmouseover="kidlist('block')" onmouseout="kidlist('none')">
+                        <li class="lien3 ">
+                            <a href="">All</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Best sellers</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Top</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Bottom</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Accessory</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <div class="wrapper-search">
+            <div id="search-container">
+                <input type="search" id="search-input" placeholder="Search..."> <i
+                    class="fa-solid fa-magnifying-glass rech"></i>
+            </div>
+        </div>
+        <i class="fa-solid fa-user icon"> account</i>
+        <i class="fa-solid fa-bag-shopping icon"> bag</i>
+
+        <script>
+            function menlist(none) {
+                document.getElementById('a').style.display = none;
+            }
+            function womenlist(none) {
+                document.getElementById('b').style.display = none;
+            }
+            function kidlist(none) {
+                document.getElementById('c').style.display = none;
+            }
+
+            (function () {
+
+                var doc = document.documentElement;
+                var w = window;
+
+                var prevScroll = w.scrollY || doc.scrollTop;
+                var curScroll;
+                var direction = 0;
+                var prevDirection = 0;
+
+                var header = document.getElementById('site-header');
+
+                var checkScroll = function () {
+
+
+
+                    curScroll = w.scrollY || doc.scrollTop;
+                    if (curScroll > prevScroll) {
+                        //scrolled up
+                        direction = 2;
+                    }
+                    else if (curScroll < prevScroll) {
+                        //scrolled down
+                        direction = 1;
+                    }
+
+                    if (direction !== prevDirection) {
+                        toggleHeader(direction, curScroll);
+                    }
+
+                    prevScroll = curScroll;
+                };
+
+                var toggleHeader = function (direction, curScroll) {
+                    if (direction === 2 && curScroll > 52) {
+
+                        //replace 52 with the height of your header in px
+
+                        header.classList.add('hide');
+                        prevDirection = direction;
+                    }
+                    else if (direction === 1) {
+                        header.classList.remove('hide');
+                        prevDirection = direction;
+                    }
+                };
+
+                window.addEventListener('scroll', checkScroll);
+
+            })();
+        </script>
+
+    </header> -->
+
+    <header>
+        <a href="" class="logo">Lové</a>
+        <ul>
+            <li><a href="home.html#ho">Home</a></li>
+            <li><a href="women.html#women-all">Women</a></li>
+            <li><a href="kids.html#kids-all">Kids</a></li>
+            <li><a href="#">Accessory</a></li>
+        </ul>
+        <ol class="oui">
+            <li><a href="">Account</a></li>
+            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+            <!-- <li><a href="shop.html#panier"><i class="fa-solid fa-bag-shopping icon"></i></a> </li> --> &nbsp;
+            &nbsp;
+            <a href="shopall.html">
+                <ion-icon class="bag" name="bag-outline"></ion-icon><span class="ti">0</span>
+            </a>
+        </ol>
+
+    </header>
+    <section>
+        <div> <a href="men-all"></a></div>
+        <div class="cat-men">
+            <h1>Men</h1> <img src="https://i.pinimg.com/564x/d8/3b/3f/d83b3ff1e9bf116d8bc3ef3d292df839.jpg" alt="">
+        </div>
+    </section>
+    <section class="sape">
+        <div class="container2">
+            <h2 class="drip">All</strong></h2>
+            <div class="parent">
+                <div class="photo">
+                    <div onmouseover="trylst('block')" onmouseout="trylst('none')"> <img class="try"
+                            src="image/greytshirt.jpg" alt="">
+                        <h2>Veste élégante simple en laine</h2>
+                        <p>129€</p>
+                        <a id="a" class="add-cart cart1" href="#" onClick="return false;">
+                            <ion-icon name="bag-add-outline" class="carteb"></ion-icon> Add cart
+                        </a>
+
+                    </div>
+                    <div onmouseover="trylist('block')" onmouseout="trylist('none')"> <img src="image/giletbleu.jpg"
+                            alt="">
+                        <h2>Cardigan en coton et lamé</h2>
+                        <p>49€</p>
+                        <a id="b" class="add-cart cart2" href="#" onClick="return false;">
+                            <ion-icon name="bag-add-outline" class="carteb"></ion-icon>
+                            </ion-icon> Panier
+                        </a>
+                    </div>
+                    <div onmouseover="trylit('block')" onmouseout="trylit('none')"> <img src="image/jeangris.jpg"
+                            alt="">
+                        <h2>Jean homme ample </h2>
+                        <p>39€</p>
+                        <a id="c" class="add-cart cart3" href="#" onClick="return false;">
+                            <ion-icon name="bag-add-outline" class="carteb"></ion-icon> Add cart
+                        </a>
+                    </div>
+                    <div onmouseover="tryit('block')" onmouseout="tryit('none')"> <img src="image/chemisenoir.jpg"
+                            alt="">
+                        <h2>T-shirt ample</h2>
+                        <p>29€</p>
+                        <a id="d" class="add-cart cart4" href="#" onClick="return false;">
+                            <ion-icon name="bag-add-outline" class="carteb"></ion-icon> Add cart
+                        </a>
+                    </div>
+                    <div onmouseover="tryi('block')" onmouseout="tryi('none')"> <img src="image/pantalonbelge.jpg"
+                            alt="">
+                        <h2>Pantalon droit belge</h2>
+                        <p>49€</p>
+                        <a id="e" class="add-cart cart5" href="#" onClick="return false;">
+                            <ion-icon name="bag-add-outline" class="carteb"></ion-icon> Add cart
+                        </a>
+
+                    </div>
+                    <div onmouseover="tri('block')" onmouseout="tri('none')"> <img src="image/vestverte.jpg" alt="">
+                        <h2>Veste en denim</h2>
+                        <p>69€</p>
+                        <a id="f" class="add-cart cart6" href="#" onClick="return false;">
+                            <ion-icon name="bag-add-outline" class="carteb"></ion-icon> Add cart
+                        </a>
+
+                    </div>
+                    <div onmouseover="ri('block')" onmouseout="ri('none')"> <img src="image/vestblanche.jpg" alt="">
+                        <h2>Veste effet cuir</h2>
+                        <p>79€</p>
+                        <a id="g" class="add-cart cart7" href="#" onClick="return false;">
+                            <ion-icon name="bag-add-outline" class="carteb"></ion-icon> Add cart
+                        </a>
+
+                    </div>
+                    <div onmouseover="ra('block')" onmouseout="ra('none')"> <img src="image/vestbleu.jpg" alt="">
+                        <h2>Veste trop belle</h2>
+                        <p>69€</p>
+                        <a id="h" class="add-cart cart8" href="#" onClick="return false;">
+                            <ion-icon name="bag-add-outline" class="carteb"></ion-icon> Add cart
+                        </a>
+
+                    </div>
+                    <div onmouseover="rat('block')" onmouseout="rat('none')"> <img src="image/bagbleu.jpg" alt="">
+                        <h2>Pochette louis vuitton</h2>
+                        <p>329€</p>
+                        <a id="i" class="add-cart cart9" href="#" onClick="return false;">
+                            <ion-icon name="bag-add-outline" class="carteb"></ion-icon> Add cart
+                        </a>
+
+                    </div>
+                    <div onmouseover="ratt('block')" onmouseout="ratt('none')"> <img src="image/bague.jpg" alt="">
+                        <h2>Bague couronne en fleur</h2>
+                        <p>29€</p>
+                        <a id="j" class="add-cart cart10" href="#" onClick="return false;">
+                            <ion-icon name="bag-add-outline" class="carteb"></ion-icon> Add cart
+                        </a>
+
+                    </div>
+                    <div onmouseover="rattt('block')" onmouseout="rattt('none')"> <img src="image/boucle.jpg" alt="">
+                        <h2>Lot de boucles d'oreilles</h2>
+                        <p>49€</p>
+                        <a id="k" class="add-cart cart11" href="#" onClick="return false;">
+                            <ion-icon name="bag-add-outline" class="carteb"></ion-icon> Add cart
+                        </a>
+
+                    </div>
+                    <div onmouseover="ratttt('block')" onmouseout="ratttt('none')"> <img src="/image/baglouis.jpg"
+                            alt="">
+                        <h2>Petit sac Louis vuitton</h2>
+                        <p>429€</p>
+                        <a id="l" class="add-cart cart12" href="#" onClick="return false;">
+                            <ion-icon name="bag-add-outline" class="carteb"></ion-icon> Add cart
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            function trylst(none) {
+                document.getElementById('a').style.display = none;
+            }
+            function trylist(none) {
+                document.getElementById('b').style.display = none;
+            }
+            function trylit(none) {
+                document.getElementById('c').style.display = none;
+            }
+            function tryit(none) {
+                document.getElementById('d').style.display = none;
+            }
+            function tryi(none) {
+                document.getElementById('e').style.display = none;
+            }
+            function tri(none) {
+                document.getElementById('f').style.display = none;
+            }
+            function ri(none) {
+                document.getElementById('g').style.display = none;
+            }
+            function ra(none) {
+                document.getElementById('h').style.display = none;
+            }
+            function rat(none) {
+                document.getElementById('i').style.display = none;
+            }
+            function ratt(none) {
+                document.getElementById('j').style.display = none;
+            }
+            function rattt(none) {
+                document.getElementById('k').style.display = none;
+            }
+            function ratttt(none) {
+                document.getElementById('l').style.display = none;
+            }
+        </script>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">Lové</h1>
+
+            <h2>CONTACT</h2>
+
+            <address>
+                5534 Somewhere In. The World 22193-10212<br>
+
+                <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">SERVICES EXCLUSIFS</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Services en ligne exclusifs</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Livraison le samedi </a>
+                    </li>
+
+                    <li>
+                        <a href="#">Lové</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">BESOIN D'AIDE ?</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                    <li>
+                        <a href="#">Foire aux Questions</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Options de paiement</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Expédition</a>
+                    </li>
+
+                    <li>
+                        <a href="#"> <i class="fa-brands fa-twitter"></i> &nbsp; Twitter</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i> &nbsp; &nbsp; Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i> &nbsp; Instagram</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">LEGAL</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2022 Something. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- <style>
+        .showhim {
+            position: absolute;
+            margin-left: 50%;
+            background: red;
+        }
+
+        .showme {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .showme {
+            display: none;
+        }
+
+        .showhim:hover .showme {
+            display: block;
+        }
+    </style>
+
+    <div class="showhim">HOVER ME
+        <div class="showme">hai</div>
+    </div> -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="anime.js"></script>
+</body>
+
+
+</html>

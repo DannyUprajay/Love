@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <header id="site-header">
+        <a href="#" class="logo">Lové</a>
+        <ul>
+            <li>
+                <a href="home.html#ho" class="active">Home</a>
+            </li>
+            <li><a href="#" onmouseover="menlist('block')" onmouseout="menlist('none')">Men</a>
+                <!-- onmouseover="chbg('block')" onmouseout="chbg('none')" -->
+                <div class="sous-menu">
+                    <ul id="a" class="liens" onmouseover="menlist('block')" onmouseout="menlist('none')">
+                        <li class="lien ">
+                            <a href="Men.html#men-all">All</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Best sellers</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Top</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Bottom</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Accessory</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" onmouseover="womenlist('block')" onmouseout="womenlist('none')">Women</a>
+                <div class="sous-menu2">
+                    <ul id="b" class="liens2" onmouseover="womenlist('block')" onmouseout="womenlist('none')">
+                        <li class="lien2 ">
+                            <a href="women.html#women-all">All</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Best sellers</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Top</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Bottom</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Accessory</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" onmouseover="kidlist('block')" onmouseout="kidlist('none')">Kids</a>
+                <div class="sous-menu3">
+                    <ul id="c" class="liens3" onmouseover="kidlist('block')" onmouseout="kidlist('none')">
+                        <li class="lien3 ">
+                            <a href="kids.html#kids-all">All</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Best sellers</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Top</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Bottom</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Accessory</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <div class="wrapper-search">
+            <div id="search-container">
+                <input type="search" id="search-input" placeholder="Search..."> <i
+                    class="fa-solid fa-magnifying-glass rech"></i>
+            </div>
+        </div>
+        <a href=" "> <i class="fa-solid fa-user icon"></i></a>
+        <a href="shopall.html">
+            <ion-icon class="bag" name="bag-outline"></ion-icon><span class="ti">0</span>
+        </a>
+        <script>
+            function menlist(none) {
+                document.getElementById('a').style.display = none;
+
+            }
+            function womenlist(none) {
+                document.getElementById('b').style.display = none;
+            }
+            function kidlist(none) {
+                document.getElementById('c').style.display = none;
+            } 
+        </script>
+    </header>
+    <section>
+        <div> <a href="" id="ho"></a></div>
+
+        <div class="vid">
+            <!-- <video id="myvideo" src="/Lifestyle Video - KB9  Karim Benzema.mp4" autoplay loop></video> -->
+            <img src="https://i.pinimg.com/564x/4c/be/91/4cbe91dc42ed83d978a4a851ed6c762b.jpg" alt="">
+    </section>
+    <script>
+        let options = {
+            root: null,
+            rootMargin: '400px',
+            threshold: 1.0
+        };
+        let callback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.target.id == 'myvideo') {
+                    if (entry.isIntersecting) {
+                        entry.target.play();
+                    }
+                    else {
+                        entry.target.pause();
+                    }
+                }
+            });
+        }
+        let observer = new IntersectionObserver(callback, options);
+        observer.observe(document.querySelector('#myvideo'));
+    </script>
+    </div>
+    <section class="mid">
+        <h2 class="drip">Category </h2>
+
+
+        <!-- <div class="parent"> -->
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <a href="Men.html#men-all"><img
+                            src="https://i.pinimg.com/564x/d0/26/2c/d0262c542ba960c84489716a4440bdd0.jpg" alt=""></a>
+                    <p id="mentext" class="men-btn">Men</p>
+                </div>
+                <div class="slide second">
+                    <a href="women.html#women-all"> <img
+                            src="https://i.pinimg.com/564x/22/e2/91/22e2918ade673ec3611dd525f4f3dacf.jpg" alt=""></a>
+                    <!-- <p id="womentext" class="men-btn">women</p> -->
+                </div>
+                <div class="slide trois">
+                    <a href="kids.html#kids-all"> <img
+                            src="https://i.pinimg.com/564x/13/76/f9/1376f94896054cd2d18ec384136d4780.jpg" alt=""></a>
+                    <!-- <p id="mentext" class="men-btn">Kids</p> -->
+
+                </div>
+                <div class="slide quatre">
+                    <a href="#"> <img src="https://i.pinimg.com/564x/98/d6/ad/98d6ade6d1448b92530b4950f65344c1.jpg"
+                            alt=""></a>
+                    <!-- <p id="mentext" class="men-btn">Accessory</p> -->
+
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn" onclick="test1();"></label>
+                <label id="btn2" for="radio2" class="manual-btn" onclick="test2();"></label>
+                <label for="radio3" class="manual-btn" onclick="test3();"></label>
+                <label for="radio4" class="manual-btn" onclick="test4();"></label>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <h2 class="drip">Drip d'été à ne pas <strong> manquer</strong></h2>
+        <div class="parent">
+            <div class="photo">
+                <div> <img src="https://i.pinimg.com/564x/c4/d0/57/c4d057c3bd36ee9d48d262ea51cffe12.jpg" alt="">
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/8f/4a/57/8f4a57117a9763aaad888b89180a6ae5.jpg" alt="">
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/e8/2d/f3/e82df3893da37c9f8b7785aef4306241.jpg" alt="">
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/fd/b8/d6/fdb8d66a9ade155733719b22caea65a6.jpg" alt="">
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/b9/22/37/b92237dccdd9794ce9e244a71da75ca9.jpg" alt="">
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/e6/49/c1/e649c1e44885672ff9a0ef1390b2ab06.jpg" alt="">
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/7e/40/4b/7e404bb586b8f9cbecd71be513028068.jpg" alt="">
+                </div>
+                <div> <img src="https://i.pinimg.com/564x/8b/c8/4f/8bc84f6abdd3e723d8a59ec0cb863147.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="best-selling">
+        <h2>Best selling </h2>
+        <div class="slider2">
+            <div class="slides2">
+                <div class="slide2 first">
+                    <img src="https://i.pinimg.com/564x/21/5e/a1/215ea11d1a4c2c0b1c5491828a16d091.jpg" alt="">
+                </div>
+                <div class="slide2 second">
+                    <img src="https://i.pinimg.com/564x/22/e2/91/22e2918ade673ec3611dd525f4f3dacf.jpg" alt="">
+                </div>
+                <div class="slide2 trois">
+                    <img src="https://i.pinimg.com/736x/cc/ec/91/ccec9140d2e5b3a9682facca8cb617f4.jpg" alt="">
+                </div>
+                <div class="slide2 quatre">
+                    <img src="https://i.pinimg.com/564x/6e/f0/9d/6ef09d8bfb0c5b584f5db66587536e52.jpg" alt="">
+                </div>
+                <div class="slide2 cinq">
+                    <img src="https://i.pinimg.com/564x/98/61/58/9861586a6928352f59c67a511ee68f8b.jpg" alt="">
+                </div>
+                <div class="slide2 six">
+                    <img src="https://i.pinimg.com/564x/30/ba/f2/30baf21d8d8da7e9dbee7f2daa8ddadf.jpg" alt="">
+                </div>
+                <div class="slide2 sept">
+                    <img src="https://i.pinimg.com/564x/b4/f7/1a/b4f71a072a52301524a5b713a20ecdf2.jpg" alt="">
+                </div>
+                <div class="slide2 huit">
+                    <img src="https://i.pinimg.com/564x/60/d5/2e/60d52ebce649b705e88ce3ff3c681fa5.jpg" alt="">
+                </div>
+                <div class="slide2 neuf">
+                    <img src="https://i.pinimg.com/736x/48/ae/59/48ae5954f7006e26b3456b0d68a08d3b.jpg" alt="">
+                </div>
+                <div class="slide2 dix">
+                    <img src="https://i.pinimg.com/564x/8b/d7/a6/8bd7a6c6a69a2fc23c51c0bbed3592f3.jpg" alt="">
+                </div>
+                <div class="slide2 onze">
+                    <img src="https://i.pinimg.com/564x/34/3d/a0/343da0f3e565dbf6b102ec867b4cc410.jpg" alt="">
+                </div>
+    </section>
+
+    <section class="accessory">
+        <h2>Accessoires </h2>
+
+        <div class="accessory-grid">
+            <div>
+                <img src="https://i.pinimg.com/564x/d8/3b/3f/d83b3ff1e9bf116d8bc3ef3d292df839.jpg" alt="">
+            </div>
+            <img src="https://i.pinimg.com/564x/a1/fc/83/a1fc83ce994635ec6d5c45fb6fbee53a.jpg" alt="">
+            <div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">Lové</h1>
+
+            <h2>CONTACT</h2>
+
+            <address>
+                5534 Somewhere In. The World 22193-10212<br>
+
+                <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">SERVICES EXCLUSIFS</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Services en ligne exclusifs</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Livraison le samedi </a>
+                    </li>
+
+                    <li>
+                        <a href="#">Lové</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">BESOIN D'AIDE ?</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                    <li>
+                        <a href="#">Foire aux Questions</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Options de paiement</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Expédition</a>
+                    </li>
+
+                    <li>
+                        <a href="#"> <i class="fa-brands fa-twitter"></i> &nbsp; Twitter</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i> &nbsp; &nbsp; Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i> &nbsp; Instagram</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">LEGAL</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2022 Something. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="anime.js"></script>
+</body>
+
+</html>

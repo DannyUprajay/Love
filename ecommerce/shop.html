@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style-shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header id="site-header">
+        <a href="#" class="logo">Lové</a>
+        <ul>
+            <li>
+                <a href="home.html#ho" class="active">Home</a>
+            </li>
+            <li><a href="#" onmouseover="menlist('block')" onmouseout="menlist('none')">Men</a>
+                <!-- onmouseover="chbg('block')" onmouseout="chbg('none')" -->
+                <div class="sous-menu">
+                    <ul id="a" class="liens" onmouseover="menlist('block')" onmouseout="menlist('none')">
+                        <li class="lien ">
+                            <a href="Men.html#men-all">All</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Best sellers</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Top</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Bottom</a>
+                        </li>
+                        <li class="lien">
+                            <a href="">Accessory</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" onmouseover="womenlist('block')" onmouseout="womenlist('none')">Women</a>
+                <div class="sous-menu2">
+                    <ul id="b" class="liens2" onmouseover="womenlist('block')" onmouseout="womenlist('none')">
+                        <li class="lien2 ">
+                            <a href="women.html#women-all">All</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Best sellers</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Top</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Bottom</a>
+                        </li>
+                        <li class="lien2">
+                            <a href="">Accessory</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" onmouseover="kidlist('block')" onmouseout="kidlist('none')">Kids</a>
+                <div class="sous-menu3">
+                    <ul id="c" class="liens3" onmouseover="kidlist('block')" onmouseout="kidlist('none')">
+                        <li class="lien3 ">
+                            <a href="kids.html#kids-all">All</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Best sellers</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Top</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Bottom</a>
+                        </li>
+                        <li class="lien3">
+                            <a href="">Accessory</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div><a href="panier"></a></div>
+        <div class="wrapper-search">
+            <div id="search-container">
+                <input type="search" id="search-input" placeholder="Search..."> <i
+                    class="fa-solid fa-magnifying-glass rech"></i>
+            </div>
+        </div>
+        <i class="fa-solid fa-user icon"></i>
+        <script>
+            function menlist(none) {
+                document.getElementById('a').style.display = none;
+            }
+            function womenlist(none) {
+                document.getElementById('b').style.display = none;
+            }
+            function kidlist(none) {
+                document.getElementById('c').style.display = none;
+            } 
+        </script>
+    </header>
+
+    <section>
+        <div class="block">
+            <h2 class="panie">Shop</h2>
+            <p>Votre panier est vide</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">Lové</h1>
+
+            <h2>CONTACT</h2>
+
+            <address>
+                5534 Somewhere In. The World 22193-10212<br>
+
+                <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">SERVICES EXCLUSIFS</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Services en ligne exclusifs</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Livraison le samedi </a>
+                    </li>
+
+                    <li>
+                        <a href="#">Lové</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">BESOIN D'AIDE ?</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                    <li>
+                        <a href="#">Foire aux Questions</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Options de paiement</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Expédition</a>
+                    </li>
+
+                    <li>
+                        <a href="#"> <i class="fa-brands fa-twitter"></i> &nbsp; Twitter</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i> &nbsp; &nbsp; Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i> &nbsp; Instagram</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">LEGAL</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2022 Something. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
